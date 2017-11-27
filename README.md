@@ -81,3 +81,42 @@ PHP是一种创建动态交互性站点的服务器脚本语言
 - 发送并取回cookies
 - 添加，删除，修改数据库中的数据
 - 限制用户访问网站中的某个页面
+
+```
+$.post("/imooc/login",{"username":username,"password":password},function(data){
+	var result = ""
+	if(data.split(":")[0] == "result" && data.split(":").length == 2) {
+	result = data.split(":")[1];
+	}
+	if(result == "1") {
+	alert("yes");
+}else{
+	alert("no");
+	}
+
+)};
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
